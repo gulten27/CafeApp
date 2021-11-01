@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "483639196100",
+    "project_id": "cafeapplication-3a172",
+    "storage_bucket": "cafeapplication-3a172.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483639196100:android:e10c1dfdce9010255b0c91",
+        "android_client_info": {
+          "package_name": "com.gultendogan.cafeapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483639196100-bb6l1qqqraa6bsoa3r9cq9epal4cn9om.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn2XGdLBvqWyeoFIFkh5mlhC2zu3SrjSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483639196100-bb6l1qqqraa6bsoa3r9cq9epal4cn9om.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

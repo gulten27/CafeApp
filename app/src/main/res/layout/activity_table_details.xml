@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TableDetails">
+
+    <TextView
+        android:id="@+id/tableNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="Masa Numarası"
+        android:textSize="30sp"
+        android:textColor="#919191"
+        app:layout_constraintBottom_toTopOf="@+id/toplamText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/toplamText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="Toplam Fiyat : 0₺"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableNameText"
+        android:textStyle="italic"
+        android:textColor="#919191"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="109dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/custom_button"
+        android:text="temizle"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toplamText">
+
+    </Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDetails"
+        android:layout_width="359dp"
+        android:layout_height="363dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete" />
+
+    <EditText
+        android:id="@+id/siparisText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="1dp"
+        android:gravity="center|center_vertical"
+        android:hint="Sipariş"
+        android:textSize="18sp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fiyatText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/custom_button"
+        android:text="kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fiyatText" />
+
+    <EditText
+        android:id="@+id/fiyatText"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="fiyat"
+        android:inputType="textPersonName"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save"
+        app:layout_constraintStart_toEndOf="@+id/siparisText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
